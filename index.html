@@ -17,41 +17,59 @@
     <model-viewer
       src="trumpetfull.glb"
       exposure="1.1"
-      alt="Trumpet top view"
+      alt="Trumpet full view"
       style="width: 100%; height: 400px;"
-      camera-orbit="0deg 0deg 2.5m"
+      camera-orbit="1259deg 77.47deg 1.5m"
+      cammera-target="0.03m 0.03m 0.1062m"
       interaction-prompt="none"
-      disable-zoom
-      disable-pan
+      camera-controls
+      auto-rotate
     ></model-viewer>
     <div class="text">
-      <h2>Effortless Precision</h2>
-      <p>VALVEM8 is an adjustable trumpet attachment that automates valve depression for you — clean, quiet, and lightning fast.</p>
+        <h2>Accessible Music with Effortless Precision.</h2>
+        <p>Music is a language, and communication shouldn't be inhibited by age or disability.</p>
+        <p>VALVEM8 keeps music alive by helping aging or mobility-limited trumpet players keep their passion alive, through an intuitive, effortless solution to valve control.</p>
     </div>
   </section>
 
   <section class="showcase">
-    <model-viewer
-      src="trumpetfull.glb"
-      exposure="1.1"
-      alt="Trumpet side view"
-      style="width: 100%; height: 400px;"
-      camera-orbit="90deg 75deg 2.5m"
-      interaction-prompt="none"
-      disable-zoom
-      disable-pan
-    ></model-viewer>
     <div class="text">
-      <h2>Clamp & Go</h2>
-      <p>Designed to securely clamp onto just two trumpet pipes, installation takes less than 60 seconds.</p>
+        <h2>Clamp & Go</h2>
+        <p>Designed to securely clamp onto just two trumpet pipes, installation takes less than 60 seconds.</p>
+        <p> Two smaller clamps offer precise, lateral control: one to suit various lead pipe placements, and one to comfortably match any grip.</p>
     </div>
+     <model-viewer
+        src="trumpetfull.glb"
+        exposure="1.1"
+        alt="ValveM8 clamp view"
+        style="width: 100%; height: 400px;"
+        camera-orbit="1219deg 70.92deg 0.1m"
+        min-camera-orbit="1219deg 70.92deg 0m"
+        max-camera-orbit="1219deg 70.92deg 1m"
+        cammera-target="0.03m 0.03m 0.1062m"
+        field-of-view="31deg"
+        interaction-prompt="none"
+    ></model-viewer>
   </section>
 
   <section class="showcase">
-    <model-viewer src="trumpetfull.glb" camera-controls exposure="1.1" alt="Trumpet side view" style="width: 100%; height: 400px;" camera-orbit="90deg 75deg 2.5m"></model-viewer>
+    <model-viewer 
+        src="trumpetfull.glb" 
+        exposure="1.1" 
+        alt="ValveM8 button view" 
+        style="width: 100%; height: 400px;" 
+        camera-orbit="1304deg 62.66deg 0.1m"
+        min-camera-orbit="1304deg 62.66deg 0m"
+        max-camera-orbit="1304deg 62.66deg 1m"
+        camera-target="-0.03m 0.04m 0.1m"
+        field-of-view="31deg"
+        interaction-prompt="none"
+    ></model-viewer>
     <div class="text">
-      <h2>Powered by Arduino</h2>
-      <p>Controlled via an Arduino Nano and 3 capacitive touch buttons, VALVEM8 delivers responsive control with no moving parts on the user side.</p>
+        <h2>Powered by Greatness</h2>
+        <p>Controlled via an ATmega328P and 3 capacitive touch buttons, VALVEM8 delivers responsive control with no moving parts on the user side.</p>
+        <p>Three 0.02-0.2 kg pressure resistors enable adaptive control by any strength level.</p>
+        <p>One 850 mAh LiPo cell offers up to 5 hours of continuous playing time.</p>
     </div>
   </section>
 </body>
