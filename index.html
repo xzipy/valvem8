@@ -6,6 +6,17 @@
   <title>VALVEM8 | Adjustable Trumpet Attachment</title>
   <link rel="stylesheet" href="style.css" />
   <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script>
+    async function updateFooter() {
+      try {
+        const res = await fetch('https://4484a312-fdc8-453a-960e-718d9be55d1a-00-d0tmikr2sawv.janeway.replit.dev/get_footer');
+        const html = await res.text();
+        document.getElementById('footer').innerHTML = html;
+      } catch (e) {
+        document.getElementById('footer').textContent = "Unable to load footer.";
+      }
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -73,13 +84,20 @@
     </div>
   </section>
 
-  </section?>
+  <section>
     <div class="text">
         <h2 style="text-align: center">Open Source Future</h2>
         <p style="text-align: center">During the filing process, <b>ValveM8</b> will remain closed source, but <b>all hardware and software will experience an eventual rollout on GitHub</b>.</p>
         <p style="text-align: center">We see a future encouraging users to build their own, or contribute to the project to form a more accessible collective.</p>
-        <p style="text-align: center">Contact suppot for inquiries or contributions at <b>valvem8@yandex.com</b></p>
+        <p style="text-align: center">Contact support for inquiries or contributions at <b>valvem8@yandex.com</b></p>
     </div>
   </section>
+
+  <footer id="footer" style="text-align: center; margin-top: 2rem; color: #888; font-size: 0.9rem;">
+  </footer>
+
+  <script>
+    updateFooter();
+  </script>
 </body>
 </html>
