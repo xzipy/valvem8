@@ -28,7 +28,6 @@ header p {
   align-items: center;
   padding: 2rem;
   gap: 2rem;
-  border-bottom: 1px solid #222;
 }
 
 model-viewer {
